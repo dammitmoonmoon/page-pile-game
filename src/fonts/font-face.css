@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'RobotoLight';
+  src: local('RobotoLight'),
+  url(./Roboto-Light.ttf) format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RalewayBold';
+  src: local('RalewayBold'),
+  url(./Raleway-Bold.ttf) format('tff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'RalewayMedium';
+  src: local('RalewayMedium'),
+  url(./Raleway-Medium.ttf) format('tff');
+  font-weight: 500;
+}
