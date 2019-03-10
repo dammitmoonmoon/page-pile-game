@@ -9,7 +9,6 @@ const PageCounter = () => {
     return (
         <div>
             <LargeText>{pageCount}</LargeText><Dash>/</Dash><SmallText>{PILE_SIZE}</SmallText>
-            <LargeDiv>{score}</LargeDiv>
         </div>
 
     );
@@ -29,11 +28,6 @@ const Dash = styled.span`
 const SmallText = styled.span`
      ${fontFamily('RobotoLight')};
      font-size: 16px;
-`;
-
-const LargeDiv = styled.div`
-     ${fontFamily('RobotoMedium')};
-     font-size: 24px;
 `;
 
 export {

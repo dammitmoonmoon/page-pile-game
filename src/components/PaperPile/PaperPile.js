@@ -1,11 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {ListTypeC} from "./OneSignatureListB";
 import Draggable from 'react-draggable';
-import {ListTypeA} from "./OneSignatureListA";
-import {ListTypeB} from "./NoSignatureList";
 import {getMaximumScore, getPages, getSignaturePerPageArray} from "./generatePageTypes";
 import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
+import {NoSignaturePage} from "./NoSignaturePage";
+import {OneSignaturePageA} from "./OneSignaturePageA";
+import {OneSignaturePageB} from "./OneSignaturePageB";
 
 const PILE_SIZE = 20;
 
@@ -58,29 +58,30 @@ const PaperPile = () => {
     );
 };
 
-const All = styled.div`
-  position: absolute;
-  width: 343px;
-  height: 437px;
-  box-shadow: 0 4px 4px 0 rgba(142, 142, 142, 0.08);
-`;
-
 const Wrapper = styled.div`
   position: relative;
-  width: 343px;
+  width: calc(100% - 32px);
+  max-width: 343px;
   margin: auto;
 `;
 
-const Bottom = styled(All)`
+const Pages = styled.div`
+  width: 100%;
+  height: 437px;
+  border-radius: 10px;
+  position: absolute;
+`;
+
+const Bottom = styled(Pages)`
     top: 40px;
     transform: scale(0.9);
 
 `;
-const Middle = styled(All)`
+const Middle = styled(Pages)`
     top: 20px;
     transform: scale(0.95);
 `;
-const Top = styled(All)`
+const Top = styled(Pages)`
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
 `;
 

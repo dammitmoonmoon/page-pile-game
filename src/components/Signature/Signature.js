@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {ReactComponent as SignatureBlank} from "../../svg/signature_blank.svg";
 import {ReactComponent as Signature} from "../../svg/signature.svg";
 import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
+import {fontFamily} from "../../fonts/fontFamily";
 
 const SignatureElement = () => {
     const [isSigned, setSigned] = React.useState(false);
@@ -27,22 +28,26 @@ const SignatureElement = () => {
 }
 
 const SignatureWrapper =  styled.div`
+  width: 96px;
 `;
 
 const Text =  styled.div`
+  margin-bottom: 8px;
+  ${fontFamily('RalewayMedium')};
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -0.3px;
-  color: #4f4f4f;
+  color: rgb(79, 79, 79);
 `;
 
 const Blank =  styled.button`
   position: relative;
   background: none;
   border: none;
+  padding: 0;
 `;
 
 const SignaturePositioned = styled(Signature)`

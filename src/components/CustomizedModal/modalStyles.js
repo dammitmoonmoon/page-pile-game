@@ -9,7 +9,10 @@ const modalStyles = {
         padding               : 'none',
         border                : 'none',
         background            : 'none',
-    }
+    },
+    overlay: {
+        backgroundColor: 'rgb(79, 79, 79, 0.8)',
+    },
 };
 
 export {

@@ -5,7 +5,7 @@ import {fontFamily} from "../fonts/fontFamily";
 const task = 'Бухгалтер забыл отнести вовремя вам на подпись договора, у вас есть полминуты перед отпуском, подпишите все бумаги';
 const btnText = 'Где моя ручка';
 
-const Rule = (props) => {
+const Intro = (props) => {
     return (
         <Wrapper>
             <Task>{task}</Task>
@@ -14,25 +14,15 @@ const Rule = (props) => {
     );
 };
 
-const Font1 = styled.div`
-  ${fontFamily('RalewayBold')};
-`;
-
-const Font2 = styled.div`
-  ${fontFamily('RalewayMedium')};
-`;
-
-const Font3 = styled.div`
-  ${fontFamily('RobotoLight')};
-`;
-
 const Wrapper = styled.div`;
+  width: 92vw;
+  margin: auto;
+  max-width: 568px;
+
   padding: 40px 32px;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
-  width: 343px;
-  margin: auto;
  `;
 
 const Task = styled.div`
@@ -68,5 +58,5 @@ const Button = styled.button`
 `;
 
 export {
-    Rule
+    Intro
 };

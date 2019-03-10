@@ -1,6 +1,6 @@
-import {OneSignatureListA} from "./OneSignatureListA";
-import {NoSignatureList} from "./NoSignatureList";
-import {OneSignatureListB} from "./OneSignatureListB";
+import {OneSignaturePageA} from "./OneSignaturePageA";
+import {NoSignaturePage} from "./NoSignaturePage";
+import {OneSignaturePageB} from "./OneSignaturePageB";
 import React from "react";
 
 function getSignaturePerPageArray(pileSize) {
@@ -23,11 +23,11 @@ function getPages(signaturePerPageArray) {
             switch (item) {
                 case 1: {
                     const random = getRandomInteger(0, 1);
-                    return random === 0 ? <OneSignatureListA key={index}/> : <OneSignatureListB key={index}/>;
+                    return random === 0 ? <OneSignaturePageA key={index}/> : <OneSignaturePageB key={index}/>;
                 }
 
                 default:
-                return <NoSignatureList key={index}/>;
+                return <NoSignaturePage key={index}/>;
             }
         }
     )};

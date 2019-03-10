@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {Rule} from "../components/Rule";
+import {Intro} from "../components/Intro";
 import {Timer} from "../components/Timer/Timer";
 import {CustomizedModal} from "../components/CustomizedModal/CustomizedModal";
 import {PaperPile, PILE_SIZE} from "../components/PaperPile/PaperPile";
@@ -14,32 +14,38 @@ const Game = () => {
     console.log('rerender');
 
     return (
-        <div>
-            <GameStatusProvider>
-                <Wrapper>
+        <GameStatusProvider>
+            <Wrapper>
+                <Header>
                     <Countdown
                         date={dateNow + 30000}
-                        renderer={props => <Timer {...props} shouldStartTimer={!isModalOpen}>{props.seconds}</Timer>}/>
+                        renderer={props => <Timer {...props} shouldStartTimer={!isModalOpen}/>}/>
                     <PageCounter/>
-                    <PaperPile/>
-                </Wrapper>
-                <CustomizedModal
-                    setModalState={setModalState}
-                    isModalOpen={isModalOpen}
-                >
-                    <Rule onCloseClick={() => setModalState(false)}/>
-                </CustomizedModal>
-            </GameStatusProvider>
-        </div>
-
+                </Header>
+                <PaperPile/>
+            </Wrapper>
+            <CustomizedModal
+                setModalState={setModalState}
+                isModalOpen={isModalOpen}
+            >
+                <Intro onCloseClick={() => setModalState(false)}/>
+            </CustomizedModal>
+        </GameStatusProvider>
     );
 };
 
  const Wrapper = styled.div`
-    height: 100vh;
-    width: 100vw;
-    background-color: grey;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
  `;
+
+const Header = styled.div`
+  color: rgb(79, 79, 79);
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 16px;
+`;
 
 export {
     Game
