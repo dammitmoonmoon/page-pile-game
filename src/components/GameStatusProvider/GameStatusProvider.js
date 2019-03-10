@@ -7,6 +7,7 @@ const GameStatusProvider = (props) => {
 
     const [pageCount, setPageCount] = React.useState(PILE_SIZE);
     const [score, setScore] = React.useState(0);
+    const [maxScore, setMaxScore] = React.useState(0);
     const [isGameOver, setGameOver] = React.useState(false);
 
     return (
@@ -18,6 +19,8 @@ const GameStatusProvider = (props) => {
                 setScore,
                 isGameOver,
                 setGameOver,
+                maxScore,
+                setMaxScore,
             }}
         >
             {props.children}

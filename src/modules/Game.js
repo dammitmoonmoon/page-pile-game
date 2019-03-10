@@ -33,17 +33,17 @@ const Game = () => {
                 </Header>
                 <PaperPile/>
             </Wrapper>
-            <CustomizedModal
-                setModalState={setModalState}
-                isModalOpen={isModalOpen}
-            >
-                <Intro onCloseClick={() => setModalState(false)}/>
-            </CustomizedModal>
+        <CustomizedModal
+            setModalState={setModalState}
+            isModalOpen={isModalOpen}
+        >
+            <Intro onCloseClick={() => setModalState(false)}/>
+        </CustomizedModal>
         </GameStatusProvider>
     );
 };
 
- const Wrapper = styled.div`
+const Wrapper = styled.div`
     width: 100%;
     max-width: 600px;
     margin: 0 auto;

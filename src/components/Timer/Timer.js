@@ -1,8 +1,15 @@
 import * as React from 'react';
 import {fontFamily} from "../../fonts/fontFamily";
 import styled from 'styled-components';
+import {GameStatusContext} from "../GameStatusProvider";
 
 const Timer = (props) => {
+    const {setGameOver} = React.useContext(GameStatusContext);
+
+    if (props.minutes === 0 && props.seconds === 0) {
+        setGameOver(true);
+    }
+
     React.useEffect(() => {
         if (props.shouldStartTimer) {
             props.api.start();

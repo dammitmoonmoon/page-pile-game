@@ -7,11 +7,10 @@ import {fontFamily} from "../../fonts/fontFamily";
 
 const SignatureElement = () => {
     const [isSigned, setSigned] = React.useState(false);
-    const [isButtonActive, setButtonActive] = React.useState(false);
     const {setScore} = React.useContext(GameStatusContext);
-    const onButtonClick = () => {
+    const onButtonClick = (e) => {
+        e.preventDefault();
         setSigned(true);
-        setButtonActive(true);
         setScore(prevScore => prevScore + 1);
     }
     return (
@@ -19,7 +18,7 @@ const SignatureElement = () => {
             <Text>
                 Подпись
             </Text>
-            <Blank onClick={onButtonClick} disabled={isButtonActive}>
+            <Blank onClick={onButtonClick} disabled={isSigned}>
                 <SignaturePlaceholder/>
                 {isSigned && <SignaturePositioned/>}
             </Blank>
@@ -56,9 +55,7 @@ const SignaturePositioned = styled(Signature)`
     left: 20px;
 `;
 
-const SignaturePlaceholder = styled(SignatureBlank)`
-    cursor: pointer;
-`;
+const SignaturePlaceholder = styled(SignatureBlank)``;
 
 export {
     SignatureElement
