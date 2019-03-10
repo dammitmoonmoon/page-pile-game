@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +15,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: local('RobotoLight'),
+  url(./fonts/Roboto-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: local('RobotoMedium'),
+  url(./fonts/Roboto-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'RalewayBold';
+  src: local('RalewayBold'),
+  url(./fonts/Raleway-Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RalewayMedium';
+  src: local('RalewayMedium'),
+  url(./fonts/Raleway-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
 }

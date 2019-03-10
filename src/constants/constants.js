@@ -1,0 +1,7 @@
+const PILE_SIZE = 5;
+const GAME_DURATION_IN_SECONDS = 15;
+
+export {
+    PILE_SIZE,
+    GAME_DURATION_IN_SECONDS,
+};
