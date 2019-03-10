@@ -7,6 +7,9 @@ const Timer = (props) => {
         if (props.shouldStartTimer) {
             props.api.start();
         }
+        else {
+            props.api.pause();
+        }
     }, [props.shouldStartTimer]);
 
     return (
@@ -27,6 +30,6 @@ const Time = styled.div`
 `;
 
 export {
-    Timer
+    Timer, Time
 };
 

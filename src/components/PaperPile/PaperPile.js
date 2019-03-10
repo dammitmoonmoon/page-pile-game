@@ -3,11 +3,7 @@ import styled from 'styled-components';
 import Draggable from 'react-draggable';
 import {getMaximumScore, getPages, getSignaturePerPageArray} from "./generatePageTypes";
 import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
-import {NoSignaturePage} from "./NoSignaturePage";
-import {OneSignaturePageA} from "./OneSignaturePageA";
-import {OneSignaturePageB} from "./OneSignaturePageB";
-
-const PILE_SIZE = 20;
+import {PILE_SIZE} from "../../constants/constants";
 
 const PaperPile = () => {
     const signaturePerPageArray = getSignaturePerPageArray(PILE_SIZE);

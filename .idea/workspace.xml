@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f265730-b38d-4210-b5a8-6d574b630c1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PaperPile/pageCommonStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomizedModal/modalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomizedModal/modalStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageCounter/PageCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageCounter/PageCounter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PaperPile/NoSignatureList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaperPile/NoSignaturePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PaperPile/OneSignatureListA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaperPile/OneSignaturePageA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PaperPile/OneSignatureListB.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaperPile/OneSignaturePageB.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PaperPile/PaperPile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaperPile/PaperPile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PaperPile/generatePageTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaperPile/generatePageTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Signature/Signature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Signature/Signature.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timer/Timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/Timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/fontFamily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fonts/fontFamily.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/type2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/type2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/type3_lower.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/type3_lower.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/type3_upper.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/type3_upper.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/Game.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -45,47 +31,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/GameStatusProvider/GameStatusProvider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PaperPile/PaperPile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PaperPile/OneSignaturePageB.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PaperPile/NoSignaturePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PaperPile/OneSignaturePageA.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -94,31 +62,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PaperPile/pageCommonStyles.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Signature/Signature.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fonts/fontFamily.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -135,6 +85,7 @@
       <find>GameStatusContext</find>
       <find>0.75</find>
       <find>font-family</find>
+      <find>PILE_SIZE</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/PaperPile</dir>
@@ -146,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/PaperPile/PaperPile.tsx" />
         <option value="$PROJECT_DIR$/src/fonts/font-face.scss" />
         <option value="$PROJECT_DIR$/src/fonts/font-face.css" />
@@ -182,9 +132,7 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/CustomizedModal/modalStyles.js" />
-        <option value="$PROJECT_DIR$/src/modules/Game.js" />
         <option value="$PROJECT_DIR$/src/fonts/fontFamily.js" />
-        <option value="$PROJECT_DIR$/src/components/Timer/Timer.js" />
         <option value="$PROJECT_DIR$/src/components/PageCounter/PageCounter.js" />
         <option value="$PROJECT_DIR$/src/svg/type2.svg" />
         <option value="$PROJECT_DIR$/src/components/PaperPile/NoSignatureList.js" />
@@ -196,7 +144,10 @@
         <option value="$PROJECT_DIR$/src/components/PaperPile/NoSignaturePage.js" />
         <option value="$PROJECT_DIR$/src/components/PaperPile/OneSignaturePageA.js" />
         <option value="$PROJECT_DIR$/src/components/PaperPile/pageCommonStyles.js" />
+        <option value="$PROJECT_DIR$/src/components/Timer/Timer.js" />
+        <option value="$PROJECT_DIR$/src/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/PaperPile/PaperPile.js" />
+        <option value="$PROJECT_DIR$/src/modules/Game.js" />
       </list>
     </option>
   </component>
@@ -227,60 +178,6 @@
               <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
               <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CustomizedModal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="GameStatusProvider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PageCounter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PaperPile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Signature" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Timer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sign-the-papers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sign-the-papers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,12 +240,12 @@
       <workItem from="1552112112621" duration="26321000" />
       <workItem from="1552188496858" duration="1265000" />
       <workItem from="1552189807488" duration="29848000" />
-      <workItem from="1552244728036" duration="6859000" />
+      <workItem from="1552244728036" duration="8023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66150000" />
+    <option name="totallyTimeSpent" value="67314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +274,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49973643" weight="0.32969433" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49815497" visible="true" weight="0.13100436" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49815497" visible="true" weight="0.18777293" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501845" side_tool="true" weight="0.40829694" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -482,16 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/GameStatusProvider/GameStatusProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CustomizedModal/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -584,30 +471,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PageCounter/PageCounter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -677,10 +544,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/GameStatusProvider/GameStatusProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PaperPile/PaperPile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
