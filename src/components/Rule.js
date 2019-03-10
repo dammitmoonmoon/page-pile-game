@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import {fontFamily} from "../fonts/fontFamily";
 
 const task = 'Бухгалтер забыл отнести вовремя вам на подпись договора, у вас есть полминуты перед отпуском, подпишите все бумаги';
 const btnText = 'Где моя ручка';
@@ -13,7 +14,19 @@ const Rule = (props) => {
     );
 };
 
-const Wrapper = styled.div`
+const Font1 = styled.div`
+  ${fontFamily('RalewayBold')};
+`;
+
+const Font2 = styled.div`
+  ${fontFamily('RalewayMedium')};
+`;
+
+const Font3 = styled.div`
+  ${fontFamily('RobotoLight')};
+`;
+
+const Wrapper = styled.div`;
   padding: 40px 32px;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
@@ -23,6 +36,8 @@ const Wrapper = styled.div`
  `;
 
 const Task = styled.div`
+  ${fontFamily('RalewayMedium')};
+  font-size: 16px;
   margin-bottom: 32px;
   font-size: 16px;
   font-weight: 500;
@@ -34,6 +49,8 @@ const Task = styled.div`
 `;
 
 const Button = styled.button`
+  ${fontFamily('RalewayBold')};
+  font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
   border: none;

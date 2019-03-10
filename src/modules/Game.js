@@ -17,10 +17,11 @@ const Game = () => {
         <div>
             <GameStatusProvider>
                 <Wrapper>
-                    <Timer shouldStartTimer = {!isModalOpen}/>
+                    <Countdown
+                        date={dateNow + 30000}
+                        renderer={props => <Timer {...props} shouldStartTimer={!isModalOpen}>{props.seconds}</Timer>}/>
                     <PageCounter/>
                     <PaperPile/>
-                    <Countdown date={dateNow + 10000} />,
                 </Wrapper>
                 <CustomizedModal
                     setModalState={setModalState}

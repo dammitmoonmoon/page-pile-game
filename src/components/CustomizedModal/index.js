@@ -1,0 +1,3 @@
+export {
+    CustomizedModal
+} from './CustomizedModal';

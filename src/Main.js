@@ -5,7 +5,7 @@ import {Game} from "./modules/Game";
 const Main = () => {
     return (
         <>
-                <BrowserRouter>
+            <BrowserRouter>
                     <Switch>
                         <Route exact path="/" name="Main Page" component={Game} />
                         <Route
@@ -19,7 +19,7 @@ const Main = () => {
                             component={Game}
                         />
                     </Switch>
-                </BrowserRouter>
+            </BrowserRouter>
         </>
     )
 };

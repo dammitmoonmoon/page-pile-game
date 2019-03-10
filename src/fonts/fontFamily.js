@@ -1,11 +1,13 @@
-
-
 const FontFamily = {
-    Akrobat: 'Akrobat, sans-serif',
-    RobotoCondensed: 'RobotoCondensed, sans-serif',
-    OpenSans: 'OpenSans, sans-serif',
+    RobotoLight: 'RobotoLight, sans-serif',
+    RalewayBold: 'RalewayBold, sans-serif',
+    RalewayMedium: 'RalewayMedium, sans-serif',
 };
 
-function fontFamily(font: FontType) {
-    return `font-family: ${FontFamily[font] || FontFamily.Akrobat};`;
+function fontFamily(font) {
+    return `font-family: ${FontFamily[font]}`;
 }
+
+export {
+    fontFamily
+};
