@@ -10,11 +10,6 @@ const Main = () => {
             <BrowserRouter>
                     <Switch>
                         <Route exact path="/" name="Main Page" component={Game} />
-                        <Route
-                            path={`/game`}
-                            name="Paper Signing Game"
-                            component={Game}
-                        />
                     </Switch>
             </BrowserRouter>
             </GameStatusProvider>

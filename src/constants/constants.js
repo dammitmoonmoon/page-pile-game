@@ -1,4 +1,4 @@
-const PILE_SIZE = 5;
+const PILE_SIZE = 20;
 const GAME_DURATION_IN_SECONDS = 15;
 
 export {
