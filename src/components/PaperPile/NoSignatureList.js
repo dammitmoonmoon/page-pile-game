@@ -1,14 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {SignatureElement} from "../Signature/Signature";
-import {ReactComponent as PageContent} from "../../svg/type1.svg";
+import {ReactComponent as PageContent} from "./../../svg/type2.svg";
 
-const List = ({ className, needSignature }) => {
+const NoSignatureList = ({ className }) => {
     return (
         <Wrapper className={className}>
             <Content>
                 <PageContent/>
-                {needSignature && <SignatureElement/>}
             </Content>
         </Wrapper>
     );
@@ -21,10 +19,9 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     
-    width: 343px;
-    height: 437px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
 `;
 
@@ -35,8 +32,6 @@ const Content = styled.div`
 ;`
 
 
-
-
 export {
-    List
+    NoSignatureList
 };

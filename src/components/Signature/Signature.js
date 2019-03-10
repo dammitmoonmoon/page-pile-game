@@ -2,17 +2,26 @@ import * as React from "react";
 import styled from "styled-components";
 import {ReactComponent as SignatureBlank} from "../../svg/signature_blank.svg";
 import {ReactComponent as Signature} from "../../svg/signature.svg";
+import {GameStatusContext} from "../../Main";
 
 
 const SignatureElement = () => {
     const [isSigned, setSigned] = React.useState(false);
+    const [isButtonActive, setButtonActive] = React.useState(false);
+    const [contextData] = React.useContext(GameStatusContext);
+    const {setScore} = contextData;
+    const onButtonClick = () => {
+        setSigned(true);
+        setButtonActive(true);
+        setScore(prevScore => prevScore + 1);
+    }
     return (
         <SignatureWrapper>
             <Text>
                 Подпись
             </Text>
-            <Blank>
-                <SignaturePlaceholder onClick={() => setSigned(true)}/>
+            <Blank onClick={onButtonClick} disabled={isButtonActive}>
+                <SignaturePlaceholder/>
                 {isSigned && <SignaturePositioned/>}
             </Blank>
         </SignatureWrapper>
@@ -32,8 +41,10 @@ const Text =  styled.div`
   color: #4f4f4f;
 `;
 
-const Blank =  styled.div`
+const Blank =  styled.button`
   position: relative;
+  background: none;
+  border: none;
 `;
 
 const SignaturePositioned = styled(Signature)`

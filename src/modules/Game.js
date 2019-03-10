@@ -1,19 +1,26 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {Rule} from "./components/Rule";
-import {Timer} from "./components/Timer/Timer";
-import {CustomizedModal} from "./components/CustomizedModal/CustomizedModal";
-import {PaperPile} from "./components/PaperPile/PaperPile";
+import {Rule} from "../components/Rule";
+import {Timer} from "../components/Timer/Timer";
+import {CustomizedModal} from "../components/CustomizedModal/CustomizedModal";
+import {PaperPile} from "../components/PaperPile/PaperPile";
+import {GameStatusContext} from "../Main";
+import {PageCounter} from "../components/PageCounter/PageCounter";
+import Countdown from "react-countdown-now";
 
 const Game = () => {
     const [isModalOpen, setModalState] = React.useState(true);
-    const [isGameOver, setGameOver] = React.useState(false);
+    const [contextData] = React.useContext(GameStatusContext);
+    const { isGameOver, setGameOver } = contextData;
+    const dateNow = Date.now();
     return (
         <div>
             <Wrapper>
-                <Timer shouldStartTimer = {!isModalOpen} setGameOver={setGameOver}/>
+                <Timer shouldStartTimer = {!isModalOpen}/>
+                <PageCounter/>
                 <PaperPile/>
                 {isGameOver && <div>GAME OVER</div>}
+                <Countdown date={dateNow + 10000} />,
             </Wrapper>
             <CustomizedModal
                 setModalState={setModalState}
