@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {fontFamily} from "../../fonts/fontFamily";
 
 const PageCounter = () => {
-    const {pageCount, score} = React.useContext(GameStatusContext);
+    const {pageCount} = React.useContext(GameStatusContext);
     return (
         <div>
             <LargeText>{pageCount}</LargeText><Dash>/</Dash><SmallText>{PILE_SIZE}</SmallText>

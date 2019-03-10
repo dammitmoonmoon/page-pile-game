@@ -4,13 +4,13 @@ import Draggable from 'react-draggable';
 import {getMaximumScore, getPages, getSignaturePerPageArray} from "./generatePageTypes";
 import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 import {PILE_SIZE} from "../../constants/constants";
-import withRouter from "react-router/es/withRouter";
 import {fontFamily} from "../../fonts/fontFamily";
+import {Fragment} from "react";
 
-const PaperPile = (props) => {
+const PaperPile = () => {
 
+    const [signaturePerPageArray] = React.useState(getSignaturePerPageArray(PILE_SIZE));
 
-    const signaturePerPageArray = getSignaturePerPageArray(PILE_SIZE);
     const pages = getPages(signaturePerPageArray);
     const maxScore = getMaximumScore(signaturePerPageArray);
     const {score} = React.useContext(GameStatusContext);
@@ -35,7 +35,8 @@ const PaperPile = (props) => {
     const onStopLogger = (e, data) => {
         const deltaX = Math.abs(data.lastX - prevX);
         const deltaY = Math.abs(data.lastY - prevY);
-        if (deltaX > (343 * 0.5) || deltaY > (437 * 0.25))  {
+        //if the page is significantly shifted, delete it (remove it from the array and rerender)
+        if (deltaX > 100 || deltaY > 50)  {
             const tempList = [...pageList];
             tempList.shift();
             setPageList([...tempList]);
@@ -45,25 +46,30 @@ const PaperPile = (props) => {
 
     return (
         <Wrapper>
-            <Bottom>{pageList[2]}</Bottom>
-            <Middle>{pageList[1]}</Middle>
+            {
+            !isGameOver &&
+                <Fragment>
+                    <Bottom>{pageList[2]}</Bottom>
+                    <Middle>{pageList[1]}</Middle>
 
-            <Draggable
-                onStart={(e, data) => onStartLogger(e, data)}
-                onStop={(e, data) => onStopLogger(e, data)}
-                position={{x: 0, y: 0}}
-            >
-                {
-                    pageList.length > 0 ?
-                    <Top>{pageList[0]}</Top>
-                        :
-                    <></>
-                }
-            </Draggable>
+                    <Draggable
+                        onStart={(e, data) => onStartLogger(e, data)}
+                        onStop={(e, data) => onStopLogger(e, data)}
+                        position={{x: 0, y: 0}}
+                    >
+                        {
+                            pageList.length > 0 ?
+                            <Top>{pageList[0]}</Top>
+                                :
+                            <></>
+                        }
+                    </Draggable>
+                </Fragment>
+            }
             {
                 isGameOver &&
                 <Positioner>
-                    <Content>Вы успели поставить <Span>{(score/maxScore * 100).toFixed(1)}%</Span> подписей</Content>
+                    <Content>Вы успели поставить <br/><Span>{maxScore === 0 ? '100%' : (score/maxScore * 100).toFixed(1)}%</Span> подписей</Content>
                 </Positioner>
             }
         </Wrapper>
@@ -71,10 +77,6 @@ const PaperPile = (props) => {
 };
 
 const Positioner = styled.div`
-  width: 92vw;
-  margin: auto;
-  max-width: 568px;
-
   padding: 40px 32px;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
@@ -84,6 +86,7 @@ const Positioner = styled.div`
 const Content = styled.div`
   ${fontFamily('RalewayBold')};
   font-size: 16px;
+  line-height: 1.7;
 `;
 
 const Span = styled.span`
@@ -123,10 +126,8 @@ const Top = styled(Pages)`
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
 `;
 
-const PaperPileRouted = withRouter(PaperPile);
-
 export {
-    PaperPileRouted as PaperPile,
+    PaperPile,
     PILE_SIZE,
 };
 

@@ -1,6 +1,6 @@
-import {OneSignaturePageA} from "./OneSignaturePageA";
-import {NoSignaturePage} from "./NoSignaturePage";
-import {OneSignaturePageB} from "./OneSignaturePageB";
+import {OneSignaturePageA} from "../PageTypes/OneSignaturePageA";
+import {NoSignaturePage} from "../PageTypes/NoSignaturePage";
+import {OneSignaturePageB} from "../PageTypes/OneSignaturePageB";
 import React from "react";
 
 function getSignaturePerPageArray(pileSize) {
