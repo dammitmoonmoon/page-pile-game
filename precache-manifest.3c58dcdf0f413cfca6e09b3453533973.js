@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "f4fa50c4003f87e7dc10459e500933c3",
-    "url": "/page-pile-game/static/media/Roboto-Medium.f4fa50c4.woff"
+    "revision": "48bd15d6cc73377c449b4027ddaa2b39",
+    "url": "/page-pile-game/static/media/Raleway-Medium.48bd15d6.woff"
   },
   {
     "revision": "9db8d3e8be7b86a490ab",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/page-pile-game/static/media/Roboto-Light.56991a66.woff"
   },
   {
-    "revision": "982601549987a8a6e917dcd96b2ecdeb",
-    "url": "/page-pile-game/static/media/Raleway-Bold.98260154.woff"
+    "revision": "f4fa50c4003f87e7dc10459e500933c3",
+    "url": "/page-pile-game/static/media/Roboto-Medium.f4fa50c4.woff"
   },
   {
-    "revision": "48bd15d6cc73377c449b4027ddaa2b39",
-    "url": "/page-pile-game/static/media/Raleway-Medium.48bd15d6.woff"
+    "revision": "982601549987a8a6e917dcd96b2ecdeb",
+    "url": "/page-pile-game/static/media/Raleway-Bold.98260154.woff"
   },
   {
     "revision": "9db8d3e8be7b86a490ab",
