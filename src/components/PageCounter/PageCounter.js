@@ -1,13 +1,13 @@
-import {GameStatusContext} from "../../Main";
 import * as React from 'react';
 import {PILE_SIZE} from "../PaperPile/PaperPile";
+import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 
 const PageCounter = () => {
-    const [contextData] = React.useContext(GameStatusContext);
+    const {pageCount, score} = React.useContext(GameStatusContext);
     return (
         <div>
-            {contextData.pageCount}/{PILE_SIZE}
-            {contextData.score}
+            {pageCount}/{PILE_SIZE}
+            {score}
         </div>
 
     );

@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {GameStatusContext} from "../../Main";
+import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 
 const Timer = (props) => {
     const [remainingSeconds, setRemainingSeconds] = React.useState(30);
-    const [ contextData ] = React.useContext(GameStatusContext);
+    const {setGameOver} = React.useContext(GameStatusContext);
 
     React.useEffect(() => {
         if (props.shouldStartTimer) {
@@ -12,7 +12,7 @@ const Timer = (props) => {
             }, 1000);
 
             if (remainingSeconds === 0) {
-                contextData.setGameOver(true);
+                setGameOver(true);
                 clearInterval(interval);
             }
 

@@ -3,31 +3,32 @@ import styled from 'styled-components';
 import {Rule} from "../components/Rule";
 import {Timer} from "../components/Timer/Timer";
 import {CustomizedModal} from "../components/CustomizedModal/CustomizedModal";
-import {PaperPile} from "../components/PaperPile/PaperPile";
-import {GameStatusContext} from "../Main";
+import {PaperPile, PILE_SIZE} from "../components/PaperPile/PaperPile";
 import {PageCounter} from "../components/PageCounter/PageCounter";
 import Countdown from "react-countdown-now";
+import {GameStatusProvider} from "../components/GameStatusProvider/GameStatusProvider";
 
 const Game = () => {
     const [isModalOpen, setModalState] = React.useState(true);
-    const [contextData] = React.useContext(GameStatusContext);
-    const { isGameOver, setGameOver } = contextData;
     const dateNow = Date.now();
+    console.log('rerender');
+
     return (
         <div>
-            <Wrapper>
-                <Timer shouldStartTimer = {!isModalOpen}/>
-                <PageCounter/>
-                <PaperPile/>
-                {isGameOver && <div>GAME OVER</div>}
-                <Countdown date={dateNow + 10000} />,
-            </Wrapper>
-            <CustomizedModal
-                setModalState={setModalState}
-                isModalOpen={isModalOpen}
-            >
-                <Rule onCloseClick={() => setModalState(false)}/>
-            </CustomizedModal>
+            <GameStatusProvider>
+                <Wrapper>
+                    <Timer shouldStartTimer = {!isModalOpen}/>
+                    <PageCounter/>
+                    <PaperPile/>
+                    <Countdown date={dateNow + 10000} />,
+                </Wrapper>
+                <CustomizedModal
+                    setModalState={setModalState}
+                    isModalOpen={isModalOpen}
+                >
+                    <Rule onCloseClick={() => setModalState(false)}/>
+                </CustomizedModal>
+            </GameStatusProvider>
         </div>
 
     );

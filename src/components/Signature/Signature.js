@@ -2,14 +2,12 @@ import * as React from "react";
 import styled from "styled-components";
 import {ReactComponent as SignatureBlank} from "../../svg/signature_blank.svg";
 import {ReactComponent as Signature} from "../../svg/signature.svg";
-import {GameStatusContext} from "../../Main";
-
+import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 
 const SignatureElement = () => {
     const [isSigned, setSigned] = React.useState(false);
     const [isButtonActive, setButtonActive] = React.useState(false);
-    const [contextData] = React.useContext(GameStatusContext);
-    const {setScore} = contextData;
+    const {setScore} = React.useContext(GameStatusContext);
     const onButtonClick = () => {
         setSigned(true);
         setButtonActive(true);

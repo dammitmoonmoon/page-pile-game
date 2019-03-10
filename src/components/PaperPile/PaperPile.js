@@ -5,7 +5,7 @@ import Draggable from 'react-draggable';
 import {ListTypeA} from "./OneSignatureListA";
 import {ListTypeB} from "./NoSignatureList";
 import {getMaximumScore, getPages, getSignaturePerPageArray} from "./generatePageTypes";
-import {GameStatusContext} from "../../Main";
+import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 
 const PILE_SIZE = 20;
 
@@ -15,7 +15,7 @@ const PaperPile = () => {
     const maximumScore = getMaximumScore(signaturePerPageArray);
 
     const [pageList, setPageList] = React.useState(pages);
-    const [contextData] = React.useContext(GameStatusContext);
+    const {setPageCount} = React.useContext(GameStatusContext);
 
 
     let prevX = 0;
@@ -33,7 +33,7 @@ const PaperPile = () => {
             const tempList = [...pageList];
             tempList.shift();
             setPageList([...tempList]);
-            contextData.setPageCount(tempList.length);
+            setPageCount(tempList.length);
         }
     };
 
