@@ -2,16 +2,17 @@ import * as React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Game} from "./modules/Game";
 import {GameStatusProvider} from "./components/GameStatusProvider";
+import HashRouter from "react-router-dom/es/HashRouter";
 
 const Main = () => {
     return (
         <>
             <GameStatusProvider>
-            <BrowserRouter>
+            <HashRouter>
                     <Switch>
                         <Route exact path="/" name="Main Page" component={Game} />
                     </Switch>
-            </BrowserRouter>
+            </HashRouter>
             </GameStatusProvider>
         </>
     )
