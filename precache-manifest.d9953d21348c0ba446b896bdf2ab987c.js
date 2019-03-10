@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/page-pile-game/static/media/Roboto-Light.56991a66.woff"
   },
   {
-    "revision": "982601549987a8a6e917dcd96b2ecdeb",
-    "url": "/page-pile-game/static/media/Raleway-Bold.98260154.woff"
-  },
-  {
     "revision": "48bd15d6cc73377c449b4027ddaa2b39",
     "url": "/page-pile-game/static/media/Raleway-Medium.48bd15d6.woff"
+  },
+  {
+    "revision": "982601549987a8a6e917dcd96b2ecdeb",
+    "url": "/page-pile-game/static/media/Raleway-Bold.98260154.woff"
   },
   {
     "revision": "bf545d5c95a070608327",
