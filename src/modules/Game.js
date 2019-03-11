@@ -11,7 +11,6 @@ import {GameStatusProvider} from "../components/GameStatusProvider/GameStatusPro
 const Game = () => {
     const [isModalOpen, setModalState] = React.useState(true);
     const dateNow = Date.now();
-    console.log('rerender');
 
     return (
         <div>
