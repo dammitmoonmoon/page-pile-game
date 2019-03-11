@@ -4,20 +4,19 @@ import styled from 'styled-components';
 import {GameStatusContext} from "../GameStatusProvider";
 
 const Timer = (props) => {
-    const {setGameOver} = React.useContext(GameStatusContext);
+    const {isGameOver, setGameOver} = React.useContext(GameStatusContext);
 
     if (props.minutes === 0 && props.seconds === 0) {
         setGameOver(true);
     }
 
     React.useEffect(() => {
-        if (props.shouldStartTimer) {
-            props.api.start();
-        }
-        else {
+        if (isGameOver) {
             props.api.pause();
+            console.log(props.api);
         }
-    }, [props.shouldStartTimer]);
+
+    }, [isGameOver]);
 
     return (
         <Time>
