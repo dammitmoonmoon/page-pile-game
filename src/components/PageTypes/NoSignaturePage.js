@@ -14,9 +14,7 @@ const NoSignaturePage = ({ className }) => {
 };
 
 
-const Content = styled.div`
-     width: 286px;
-;`
+const Content = styled.div`;`
 
 
 export {

@@ -16,7 +16,6 @@ const OneSignaturePageA = ({ className }) => {
 };
 
 const Content = styled.div`
-     width: 286px;
      margin-bottom: 48px;
 ;`
 

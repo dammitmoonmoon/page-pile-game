@@ -20,12 +20,10 @@ const OneSignaturePageB = ({ className }) => {
 };
 
 const ContentTop = styled.div`
-     width: 286px;
      margin-bottom: 20px;
 ;`
 
 const ContentBottom = styled.div`
-     width: 286px;
      margin-top: 25px;
 ;`
 
