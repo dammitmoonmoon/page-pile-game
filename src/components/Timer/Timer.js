@@ -13,7 +13,6 @@ const Timer = (props) => {
     React.useEffect(() => {
         if (isGameOver) {
             props.api.pause();
-            console.log(props.api);
         }
 
     }, [isGameOver]);
