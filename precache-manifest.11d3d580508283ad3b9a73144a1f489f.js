@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "48bd15d6cc73377c449b4027ddaa2b39",
-    "url": "/page-pile-game/static/media/Raleway-Medium.48bd15d6.woff"
+    "revision": "f4fa50c4003f87e7dc10459e500933c3",
+    "url": "/page-pile-game/static/media/Roboto-Medium.f4fa50c4.woff"
   },
   {
-    "revision": "11494e67cb49f6ab850b",
+    "revision": "d2c385aecb3572ff0cc2",
     "url": "/page-pile-game/static/css/main.56724d8c.chunk.css"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/page-pile-game/static/media/Raleway-Bold.98260154.woff"
   },
   {
-    "revision": "f4fa50c4003f87e7dc10459e500933c3",
-    "url": "/page-pile-game/static/media/Roboto-Medium.f4fa50c4.woff"
+    "revision": "48bd15d6cc73377c449b4027ddaa2b39",
+    "url": "/page-pile-game/static/media/Raleway-Medium.48bd15d6.woff"
   },
   {
-    "revision": "11494e67cb49f6ab850b",
-    "url": "/page-pile-game/static/js/main.abc1a197.chunk.js"
+    "revision": "d2c385aecb3572ff0cc2",
+    "url": "/page-pile-game/static/js/main.a0b270a8.chunk.js"
   },
   {
     "revision": "ee40e9827f317314252a49be6a02364c",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/page-pile-game/static/media/type3_upper.a5f3b957.svg"
   },
   {
-    "revision": "3785fa030a275043448db64bedf9e3d2",
+    "revision": "da647268489034bbe2088acc2e528427",
     "url": "/page-pile-game/index.html"
   }
 ];
