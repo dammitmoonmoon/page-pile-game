@@ -16,16 +16,16 @@ self.__precacheManifest = [
     "url": "/page-pile-game/static/js/2.9c44d419.chunk.js"
   },
   {
+    "revision": "f4fa50c4003f87e7dc10459e500933c3",
+    "url": "/page-pile-game/static/media/Roboto-Medium.f4fa50c4.woff"
+  },
+  {
     "revision": "56991a6627087ad081029dc0a64a91e4",
     "url": "/page-pile-game/static/media/Roboto-Light.56991a66.woff"
   },
   {
     "revision": "982601549987a8a6e917dcd96b2ecdeb",
     "url": "/page-pile-game/static/media/Raleway-Bold.98260154.woff"
-  },
-  {
-    "revision": "f4fa50c4003f87e7dc10459e500933c3",
-    "url": "/page-pile-game/static/media/Roboto-Medium.f4fa50c4.woff"
   },
   {
     "revision": "e3d9fcde3e33f0b260c3",
