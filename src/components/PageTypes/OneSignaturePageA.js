@@ -4,13 +4,13 @@ import {SignatureElement} from "../Signature/Signature";
 import {ReactComponent as PageContent} from "../../svg/type1.svg";
 import {PageWrapper} from "./pageCommonStyles";
 
-const OneSignaturePageA = ({ className }) => {
+const OneSignaturePageA = ({ className, marginOption }) => {
     return (
         <PageWrapper className={className}>
             <Content>
                 <PageContent/>
             </Content>
-                <SignatureElement />
+                <SignatureElement marginOption={marginOption}/>
         </PageWrapper>
     );
 };

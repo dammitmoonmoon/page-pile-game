@@ -5,13 +5,13 @@ import {ReactComponent as PageContentBottom} from "../../svg/type3_lower.svg";
 import {ReactComponent as PageContentTop} from "../../svg/type3_upper.svg";
 import {PageWrapper} from "./pageCommonStyles";
 
-const OneSignaturePageB = ({ className }) => {
+const OneSignaturePageB = ({ className, marginOption }) => {
     return (
         <PageWrapper className={className}>
             <ContentTop>
                 <PageContentTop/>
             </ContentTop>
-            <SignatureElement/>
+            <SignatureElement marginOption={marginOption}/>
             <ContentBottom>
                 <PageContentBottom/>
             </ContentBottom>

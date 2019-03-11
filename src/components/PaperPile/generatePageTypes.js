@@ -18,12 +18,17 @@ function getRandomInteger(min, max) {
 }
 
 function getPages(signaturePerPageArray) {
+    const marginOptions = ['margin: auto;', 'margin-left: auto;', 'margin-right: auto;'];
+
     return signaturePerPageArray.map((item, index) =>
         {
+            const marginOption = marginOptions[Math.floor(Math.random()*marginOptions.length)];
             switch (item) {
                 case 1: {
                     const random = getRandomInteger(0, 1);
-                    return random === 0 ? <OneSignaturePageA key={index}/> : <OneSignaturePageB key={index}/>;
+                    return random === 0 ?
+                        <OneSignaturePageA marginOption={marginOption} key={index}/>
+                        : <OneSignaturePageB marginOption={marginOption} key={index}/>;
                 }
 
                 default:

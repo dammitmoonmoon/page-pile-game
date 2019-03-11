@@ -5,16 +5,18 @@ import {ReactComponent as Signature} from "../../svg/signature.svg";
 import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 import {fontFamily} from "../../fonts/fontFamily";
 
-const SignatureElement = () => {
+const SignatureElement = ({marginOption}) => {
     const [isSigned, setSigned] = React.useState(false);
     const {setScore} = React.useContext(GameStatusContext);
+
     const onButtonClick = (e) => {
         e.preventDefault();
         setSigned(true);
         setScore(prevScore => prevScore + 1);
-    }
+    };
+
     return (
-        <SignatureWrapper>
+        <SignatureWrapper marginOption={marginOption}>
             <Text>
                 Подпись
             </Text>
@@ -28,6 +30,7 @@ const SignatureElement = () => {
 
 const SignatureWrapper =  styled.div`
   width: 96px;
+  ${props => props.marginOption};
 `;
 
 const Text =  styled.div`
