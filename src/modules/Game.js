@@ -8,12 +8,30 @@ import {PageCounter} from "../components/PageCounter/PageCounter";
 import Countdown from "react-countdown-now";
 import {GameStatusProvider} from "../components/GameStatusProvider/GameStatusProvider";
 import {GAME_DURATION_IN_SECONDS} from "../constants/constants";
+import * as platform from 'platform';
 
 const gameMinutes = Math.floor(GAME_DURATION_IN_SECONDS / 60);
 const gameSeconds = GAME_DURATION_IN_SECONDS % 60;
 
+const isIos = !!(platform.os && platform.os.family === 'iOS');
+
 const Game = () => {
     const [isModalOpen, setModalState] = React.useState(true);
+
+    React.useEffect(() => {
+        if (isIos) {
+            window.document.body.addEventListener('touchmove', (e) => e.preventDefault(), {
+                passive: false
+            });
+        }
+        return function cleanup() {
+            if (isIos) {
+                window.document.body.removeEventListener('touchmove', (e) => e.preventDefault(), {
+                    passive: false
+                });
+            }
+        };
+    }, []);
 
     return (
         <GameStatusProvider>

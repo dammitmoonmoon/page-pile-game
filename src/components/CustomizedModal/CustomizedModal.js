@@ -1,19 +1,28 @@
-import Modal from 'react-modal';
 import * as React from "react";
 import {modalStyles} from "./modalStyles";
+import ResponsiveModal from 'react-responsive-modal';
+import {createGlobalStyle} from "styled-components";
+
+const ResponsiveModalGlobalStyle = createGlobalStyle`
+    .responsive-modal-overlay {
+        -webkit-overflow-scrolling: touch;
+    }
+`;
 
 const CustomizedModal = (props) => {
     return (
         <div>
-            <Modal
-                isOpen={props.isModalOpen}
-                onRequestClose={() => props.setModalState(false)}
-                style={modalStyles}
-                shouldCloseOnOverlayClick={false}
-                ariaHideApp={false}
+            <ResponsiveModalGlobalStyle />
+            <ResponsiveModal
+                open={props.isModalOpen}
+                onClose={() => props.setModalState(false)}
+                showCloseIcon={false}
+                styles={modalStyles}
+                closeOnOverlayClick = {true}
+                classNames={{ overlay: 'responsive-modal-overlay' }}
             >
                 {props.children}
-            </Modal>
+            </ResponsiveModal>
         </div>
     );
 };
