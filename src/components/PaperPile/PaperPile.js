@@ -6,8 +6,29 @@ import {GameStatusContext} from "../GameStatusProvider/GameStatusProvider";
 import {PILE_SIZE} from "../../constants/constants";
 import {fontFamily} from "../../fonts/fontFamily";
 import {Fragment} from "react";
+import * as platform from 'platform';
+
+const handlePreventTouchmoveWhenPanning = (event) => {
+        event.preventDefault();
+};
+
+const isIos = !!(platform.os && platform.os.family === 'iOS');
 
 const PaperPile = () => {
+    React.useEffect(() => {
+        if (isIos) {
+            window.document.body.addEventListener('touchmove', handlePreventTouchmoveWhenPanning, {
+                passive: false
+            });
+        }
+        return function cleanup() {
+            if (isIos) {
+                window.document.body.removeEventListener('touchmove', handlePreventTouchmoveWhenPanning, {
+                    passive: false
+                });
+            }
+        };
+    }, []);
 
     const [signaturePerPageArray] = React.useState(getSignaturePerPageArray(PILE_SIZE));
 
